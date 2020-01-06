@@ -33,7 +33,7 @@ I recommend using ImageWebp component you can find [here](https://gist.github.co
 So you should do something like that
 
 ```js
-import image from "./images/image.webp";
+import imageWebp from "./images/image.webp";
 import image from ".images/image.svg";
 import image604 from "./images/image-604x.webp";
 import image1208 from "./images/image-1208x.webp";
@@ -41,9 +41,9 @@ import image1811 from "./images/image-1811x.webp";
 import image2415 from "./images/image-2415x.webp";
 import image3019 from "./images/image-3019x.webp";
 
-const srcSetFull = `${logo604} 604w, ${logo1208} 1208w, ${logo1811} 1811w, ${logo2415} 2415w, ${logo3019} 3019w`;
+const srcSetFull = `${image604} 604w, ${image1208} 1208w, ${image1811} 1811w, ${image2415} 2415w, ${image3019} 3019w`;
 
-<img src={logo} srcWebp={logoWebp} srcSet={srcSetFull} alt="">
+<img src={image} srcWebp={imageWebp} srcSet={srcSetFull} alt="">
 ```
 
 #### Warning
