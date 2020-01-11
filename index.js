@@ -19,7 +19,7 @@ generateResponsiveImages(images, configs)
 const pattern = /(?:.*)(@[0-9]{0,10}x)$/
 const files = fs.readdirSync('./images/')
     .filter((file) => file !== '.DS_Store')
-    .map((file) => `./imges/${file}`)
+    .map((file) => `./images/${file}`)
 
 // Will rename all images present in the folder image which contains suffix `@{$number}x` by `${width}x`.
 renameImagesToSize(files, pattern)
